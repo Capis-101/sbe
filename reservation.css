@@ -1,3 +1,7 @@
+/* 
+
+di na to kailangan nasa SBE.css na ang mga naka green na code
+
 * {
     margin: 0%;
     padding: 0%;
@@ -33,7 +37,7 @@ ul:hover li a:not(:hover) {
 	color: black;
 	opacity: 0.3;
 	filter: blur(1px);
-}
+} */
 .form{
     width: 100%;
     height: 100vh;
