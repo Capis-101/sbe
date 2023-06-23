@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="reservation.css">
+
+    <!-- ito ang dinag dag ko -->
+    <link rel="stylesheet" href="SBE.css">
+        
     <title>RESERVATION</title>
 </head>
 <body>
@@ -17,70 +22,41 @@
         </ul>
     </nav>
 
-    <div class="container">
-    
+    <div class="form">
     <h1>RESERVATION FORM</h1>
-    <form class="form">
-        <div class="flex">
-            <label>
-                <input required="" placeholder="" type="text" class="input">
-                <span>first name</span>
-            </label>
-    
-            <label>
-                <input required="" placeholder="" type="text" class="input">
-                <span>last name</span>
-            </label>
-        </div>  
-                
-        <label>
-            <input required="" placeholder="" type="email" class="input">
-            <span>email</span>
-        </label> 
-            
-        <label>
-            <input required="" type="tel" placeholder="" class="input">
-            <span>contact number</span>
-        </label>
+    <form>
+        <label for="fname">First name:
+        <input type="text" id="fname" name="fname"></label>
 
-        <div class="container">
-            <div class="radio-tile-group">
-              <div class="input-container">
-                <input id="walk" class="radio-button" type="radio" name="radio">
-                <div class="radio-tile">
-                  <label for="walk" class="radio-tile-label">COTTAGE 1</label>
-                </div>
-              </div>
-          
-              <div class="input-container">
-                <input id="bike" class="radio-button" type="radio" name="radio">
-                <div class="radio-tile">
-                  <label for="bike" class="radio-tile-label">COTTAGE 2</label>
-                </div>
-              </div>
-          
-              <div class="input-container">
-                <input id="drive" class="radio-button" type="radio" name="radio">
-                <div class="radio-tile">
-                  <label for="drive" class="radio-tile-label">COTTAGE 3</label>
-                </div>
-              </div>
-            </div>
-          </div>
-          
+        <label for="Lname">Last name:
+        <input type="text" id="Lname" name="Lname"></label>
 
-        <label>
-            <textarea required="" rows="3" placeholder="messsage" class="input01"></textarea>
-        </label>
+        <label for="pnum">Phone number:
+        <input type="" id="pnum" name="pnum"></label>
+
+        <label for="email">EMAIL:<input type="email" name="email" id="email"></label><br>
+
+        <p>select your cottage</p>
+        <label >COTTAGE 1 ($250)<input type="radio" id="c1" name="c1"></label>
+        <label >COTTAGE 2 ($250)<input type="radio" id="c2" name="c2"></label>
+        <label >COTTAGE 3 ($250)<input type="radio" id="c3" name="c3"></label>
+        <label >COTTAGE 4 ($250)<input type="radio" id="c4" name="c4"></label><br>
+
+        <label for="quantity">Quantity adult(age 18-55 yrs):
+        <input type="number" id="quantity" name="quantity" min="1" max="50"></label>
+
+        <label for="quantity">Quantity kid(age 3-17 yrs):
+        <input type="number" id="quantity" name="quantity" min="1" max="50"></label><br>
         
-        <button class="fancy" href="#">
-          <span class="top-key"></span>
-          <span class="text">submit</span>
-          <span class="bottom-key-1"></span>
-          <span class="bottom-key-2"></span>
-        </button>
+        <label for="date">Date of swimming
+        <input type="date"></label><br>
+
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="MESSAGE"></textarea><br>
+
+        <button>send</button>
     </form>
 </div>
 </main>
 </body>
+
 </html>

@@ -1,42 +1,64 @@
 * {
+    /* nice oks tung defualt nato */
     margin: 0%;
     padding: 0%;
-    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    
 }
-main {
-    width: 100%;
-    height: 100%;
-}
+
 nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1.5%;
+    position: relative;
+   
     background-color: hsl(0, 1%, 30%);
+    z-index: 1;
+
 }
 .nav-links ul {
     display: flex;
     list-style-type: none;
 }
-.nav-links li a {
+.nav-links li a{
     text-decoration: none;
     color: rgb(0, 0, 0);
     margin: 0 15px;
 }
-ul:hover li a {
+
+.HOME img {
+    height: 100vh;
+    width: 100%;
+}
+
+
+/* ito ang mga dinag dag ko */
+
+/* ul li a:hover - yan ay para sa mouse pag dumaan ang mouse iilaw ng puti ang text sa navbar */
+
+ul li a:hover{
+    color: white;
+}
+
+/* ul li a.active - ito naman para malaman mo kung saan kang website maging puti ang text sa nav kung nasaan ka mang page ng website*/
+ul li a.active{
+    color: white;
+}
+
+
+
+
+/* deleted hover in nav */
+
+/* ul:hover li a {
 	color: rgb(255, 255, 255);
 	animation: 1s ease-in-out infinite alternate;
-}
-ul:hover li a:not(:hover) {
+} */
+
+
+/* ul:hover li a:not(:hover) {
 	color: black;
 	opacity: 0.3;
 	filter: blur(1px);
-}
-.HOME img {
-    display: block;
-    padding: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
-    height: 750px;
-}
+} */
